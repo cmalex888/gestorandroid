@@ -52,8 +52,7 @@ public class actividad2 extends AppCompatActivity implements View.OnClickListene
     }
 
     public void aRetornar(View v){
-        Intent intentodos = new Intent(actividad2.this, MainActivity.class);
-        startActivity(intentodos);
+        finish();
 
     }
 

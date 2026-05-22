@@ -1,5 +1,6 @@
 package com.example.gestorandroid;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -49,6 +50,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnGuardar.setOnClickListener(this);
     }
 
+
+
     private void initUI(){
         //Edittext
         etUsuario = findViewById(R.id.editTextText2);
@@ -62,6 +65,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnGuardar = findViewById(R.id.button2);
 
     }
+
+public void aProductos (View v)
+{
+    Intent intento = new Intent(this, actividad2.class);
+    startActivity(intento);
+}
+
 
     /*override*/
     public void onClick(View v){
